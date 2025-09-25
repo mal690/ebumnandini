@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebumnandini Fast Food</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffaf3;
+      color: #2d1b0d;
+    }
+
+    header {
+      background: #4a2511;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      color: #e67e22;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #4a2511;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e67e22;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #4a2511;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background: #20b955;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="food/logo.JPG" alt="Ebumnandini Fast Food Logo">
+    <h1>Ebumnandini Fast Food</h1>
+    <p><em>Totosa Lowo Mzimba</em></p>
+  </header>
+
+  <!-- Menu -->
+  <h2>Our Menu</h2>
+  <div class="menu">
+
+    <a class="menu-item" href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order%20*Your%20Girlfriend's%20Favorite*">
+      <img src="food/strips.jpg" alt="Your Girlfriend's Favorite">
+      <h3>Your Girlfriend's Favorite</h3>
+      <p>Crispy Chicken Strips or Chicken Burger with Fried Chips</p>
+      <p class="price">R25</p>
+    </a>
+
+    <a class="menu-item" href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order%20*Babalas%20Striker*">
+      <img src="food/pops.jpg" alt="Babalas Striker">
+      <h3>Babalas Striker</h3>
+      <p>Pops on a Bamboo Stick (perfect as finger food)</p>
+      <p class="price">R10</p>
+    </a>
+
+    <a class="menu-item" href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order%20*Your%20Wrap*">
+      <img src="food/wrap.jpg" alt="Your Wrap">
+      <h3>Your Wrap</h3>
+      <p>Salad, Fries, Chicken & Sauces wrapped in a soft tortilla</p>
+      <p class="price">R30</p>
+    </a>
+
+    <a class="menu-item" href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order%20*Make%20My%20Day*">
+      <img src="food/MMD.jpg" alt="Make My Day">
+      <h3>Make My Day</h3>
+      <p>Fully Loaded Fries + Chicken Meat</p>
+      <p class="price">Medium R20 | Large R35</p>
+    </a>
+
+    <a class="menu-item" href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order%20*Your%20Sunday%20Special*">
+      <img src="food/combo.jpg" alt="Your Sunday Special">
+      <h3>Your Sunday Special</h3>
+      <p>Weekly Combo (Chef’s choice meal for Sunday)</p>
+      <p class="price">Under R50</p>
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 Contact us on WhatsApp: <a href="https://wa.me/27697341454" target="_blank">Click to Chat</a></p>
+    <p>&copy; 2025 Ebumnandini Fast Food</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27697341454?text=Hi%20I%20want%20to%20order" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
